@@ -1,0 +1,59 @@
+*** Project 8: MEP estimation for CH4 dissociation
+memory,500,m
+
+! Explicitly request no symmetry
+symmetry,nosym
+
+! Specify the required basis set
+basis=cc-pVDZ
+
+! Define the methane geometry using a Z-matrix
+geometry={
+  angstrom
+  C
+  H1, C, rch
+  H2, C, rch_eq, H1, ang
+  H3, C, rch_eq, H1, ang, H2, 120.0
+  H4, C, rch_eq, H1, ang, H2, -120.0
+}
+
+! Set static internal coordinates for the intact fragment
+rch_eq=1.09
+ang=109.47
+
+! Define arrays to store our data across loop iterations
+i=0
+
+! Loop over C-H bond distances from equilibrium to dissociation
+do rch_val = 0.1, 5.0, 0.1
+  i=i+1
+  
+  ! Update the geometry variable
+  rch = rch_val
+
+  ! 1. Ground State Hartree-Fock Reference
+  hf
+  
+  ! Store values in indexed arrays for the table
+  R_ARR(i) = rch
+  HF_ARR(i) = energy
+
+  ! 2. CASSCF Optimization
+  {multi
+    closed,4
+    occ,6
+    wf,10,1,0
+  }
+
+  ! 3. CASPT2 Calculation
+  {rs2
+    shift,0.2
+  }
+  CASPT2_ARR(i) = energy
+
+enddo
+
+! Generate the table from the populated arrays after the loop finishes
+table, R_ARR, HF_ARR, CASPT2_ARR
+title, C-H Distance vs HF and CASPT2 Energies
+save, scan_results.csv

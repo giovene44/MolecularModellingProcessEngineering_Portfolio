@@ -1,0 +1,19 @@
+***, CCSD(T) Single Point Energy for ts_m062x_cc-pvtz_sp.inp
+memory, 1000, m
+
+geometry={
+angstrom
+ N       -0.287023    -0.000004    -0.137581
+ H       -0.436102    -0.805399     0.476785
+ H       -0.436669     0.805041     0.477111
+ H        1.027088     0.000513    -0.148391
+ H        1.854847    -0.000127     0.157563
+}
+
+basis=cc-pvtz
+
+set, charge=0
+set, spin=1    ! Number of unpaired electrons
+
+{rhf}
+{uccsd(t)}

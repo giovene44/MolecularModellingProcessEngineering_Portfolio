@@ -1,0 +1,18 @@
+Property,Value,Units
+Molecular Mass,18.01056,amu
+Symmetry Number,2.0,
+Temperature,298.15,K
+Pressure,1.0,Atm
+gel,1,
+
+Rotational Temperatures
+Mode,Temperature (K)
+Theta_R1,39.93649
+Theta_R2,20.32336
+Theta_R3,13.46906
+
+Vibrational Frequencies
+Mode,Wavenumber (cm^-1)
+Freq_1,1603.4298
+Freq_2,3809.6508
+Freq_3,3931.5686

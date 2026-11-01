@@ -1,0 +1,12 @@
+Computed TMS Reference Shielding: 32.7014 ppm
+Found spin-spin couplings! Using a threshold of 0.5 Hz for splitting.
+\n--- Processed Molecule ---
+Name: ethanol_nmr_spinspin
+  δ 4.62 (ddddd (2×2×2×2×2 lines), 1H) — Group A
+  δ 4.36 (ddddd (2×2×2×2×2 lines), 1H) — Group B
+  δ 2.16 (dddd (2×2×2×2 lines), 1H) — Group C
+  δ 1.89 (ddddd (2×2×2×2×2 lines), 1H) — Group D
+  δ 1.70 (dddd (2×2×2×2 lines), 1H) — Group E
+  δ 0.46 (ddd (2×2×2 lines), 1H) — Group F
+  ✓ Spectrum saved to 'NMR_G16_ethanol_nmr_spinspin.png'
+\n  ✓ Plot saved successfully as NMR_G16_ethanol_nmr_spinspin.png

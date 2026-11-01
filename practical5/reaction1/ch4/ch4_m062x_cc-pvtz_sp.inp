@@ -1,0 +1,19 @@
+***, CCSD(T) Single Point Energy for ch4_m062x_cc-pvtz_sp.inp
+memory, 1000, m
+
+geometry={
+angstrom
+ C        0.000000     0.000000     0.000000
+ H        0.627575     0.627575     0.627575
+ H       -0.627575    -0.627575     0.627575
+ H       -0.627575     0.627575    -0.627575
+ H        0.627575    -0.627575    -0.627575
+}
+
+basis=cc-pvtz
+
+set, charge=0
+set, spin=0    ! Number of unpaired electrons
+
+{rhf}
+{uccsd(t)}

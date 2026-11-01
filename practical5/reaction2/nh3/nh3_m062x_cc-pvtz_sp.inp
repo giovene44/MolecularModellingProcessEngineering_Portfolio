@@ -1,0 +1,18 @@
+***, CCSD(T) Single Point Energy for nh3_m062x_cc-pvtz_sp.inp
+memory, 1000, m
+
+geometry={
+angstrom
+ N       -0.000000     0.115024     0.000000
+ H       -0.937136    -0.268523    -0.000000
+ H        0.468568    -0.268322     0.811626
+ H        0.468568    -0.268322    -0.811626
+}
+
+basis=cc-pvtz
+
+set, charge=0
+set, spin=0    ! Number of unpaired electrons
+
+{rhf}
+{uccsd(t)}

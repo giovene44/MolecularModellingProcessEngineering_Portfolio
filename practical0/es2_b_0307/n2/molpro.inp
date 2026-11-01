@@ -1,0 +1,8 @@
+memory, 50, m
+
+geometry={H}
+basis=d-aug-cc-pVQZ
+
+{uhf
+ wf, 1, 2, 1  
+}

@@ -1,0 +1,56 @@
+memory=50MW
+nosym
+geometry={
+C
+C  1  r2
+H  1  r3  2  a3
+H  1  r4  2  a4  3  d4
+H  1  r5  2  a5  3  d5
+C  2  r6  1  a6  3  d6
+H  2  r7  1  a7  3  d7
+H  2  r8  1  a8  3  d8
+H  6  r9  2  a9  1  d9
+H  6  r10  2  a10  1  d10
+H  6  r11  2  a11  1  d11
+}
+r2= 1.5193
+r3= 1.0945
+a3= 110.28
+r4= 1.0947
+a4= 111.00
+d4= 119.76
+r5= 1.0947
+a5= 111.00
+d5= 240.25
+r6= 1.5193
+a6= 111.66
+d6= 180.06
+r7= 1.0956
+a7= 109.45
+d7= 301.39
+r8= 1.0956
+a8= 109.45
+d8=  58.72
+r9= 1.0947
+a9= 111.00
+d9=  60.31
+r10= 1.0945
+a10= 110.27
+d10= 180.06
+r11= 1.0947
+a11= 111.01
+d11= 299.82
+
+!closed shell input
+basis=6-311G
+
+hf
+mp2
+optg
+frequencies
+
+! {hf; wf,5,1,0; energy; }
+! {multi;closed, 4;occ, 6;wf, 10,1,0;state,1 ;maxiter,40}
+put,molden,molpro.molden
+---
+

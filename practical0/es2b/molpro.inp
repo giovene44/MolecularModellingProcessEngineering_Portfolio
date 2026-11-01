@@ -1,0 +1,30 @@
+***,Idrogeno_Joule_Final
+memory,64,m;
+geometry={H}
+basis=av5z
+h2j = 4.3597447222071e-18
+scale = 1e18  ! Fattore di scala per evitare lo zero
+
+! 1s
+{casscf;occ,1;wf,1,1,1;state,1}
+e1s_ha=energy; e1s_j_scaled=e1s_ha*h2j*scale
+
+! 2s
+{casscf;occ,2;wf,1,1,1;state,2}
+e2s_ha=energy(2); e2s_j_scaled=e2s_ha*h2j*scale
+
+! 2p (Simmetria 2)
+{casscf;occ,0,1;wf,1,2,1;state,1}
+e2p_ha=energy; e2p_j_scaled=e2p_ha*h2j*scale
+
+! --- TABELLA 1: HARTREE ---
+{table,e1s_ha,e2s_ha,e2p_ha
+title,ENERGIE IN HARTREE (Riga 1)
+head,1s_Ha,2s_Ha,2p_Ha
+format,f15.8,f15.8,f15.8}
+
+! --- TABELLA 2: JOULE SCALATI ---
+{table,e1s_j_scaled,e2s_j_scaled,e2p_j_scaled
+ title,ENERGIE IN JOULE (Moltiplicate per 10^18)
+ head,1s_J(*10^18),2s_J(*10^18),2p_J(*10^18)
+}

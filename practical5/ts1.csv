@@ -1,0 +1,31 @@
+Property,Value,Units
+Electronic Energy (Molpro),-40.913836725033,Ha
+ZPE Correction (Gaussian),0.042326,Ha
+Molecular Mass,17.03913,amu
+Symmetry Number,1.0,
+Pressure,1.0,Atm
+Moment of Inertia I_A,3.36037,amu*A^2
+Moment of Inertia I_B,8.58494,amu*A^2
+Moment of Inertia I_C,8.58507,amu*A^2
+Electronic Degeneracy,2,
+
+Rotational Temperatures
+Mode,Temperature (K)
+Theta_R1,7.21776
+Theta_R2,2.82522
+Theta_R3,2.82518
+
+Vibrational Frequencies
+Mode,Wavenumber (cm^-1)
+Freq_1,-1542.8829
+Freq_2,531.9615
+Freq_3,532.9063
+Freq_4,1075.3075
+Freq_5,1120.9395
+Freq_6,1121.0336
+Freq_7,1435.4121
+Freq_8,1435.5015
+Freq_9,1734.2649
+Freq_10,3099.8858
+Freq_11,3245.5524
+Freq_12,3246.2172

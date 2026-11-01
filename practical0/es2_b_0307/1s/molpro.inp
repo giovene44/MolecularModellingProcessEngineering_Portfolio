@@ -1,0 +1,13 @@
+memory, 50, m
+
+geometry={
+H
+}
+
+basis=aug-cc-pVQZ
+
+{uhf
+ print, orbitals=2
+}
+
+put, molden, h_orbitals.molden

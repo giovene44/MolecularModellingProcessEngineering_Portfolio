@@ -1,0 +1,12 @@
+Property,Value,Units
+Molecular Mass,1.00783,amu
+Symmetry Number,1.0,
+Temperature,298.15,K
+Pressure,1.0,Atm
+gel,2,
+
+Rotational Temperatures
+Mode,Temperature (K)
+
+Vibrational Frequencies
+Mode,Wavenumber (cm^-1)

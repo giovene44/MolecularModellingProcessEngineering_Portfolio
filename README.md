@@ -5,14 +5,14 @@ This repository contains the computational projects, source code, data analysis,
 The repository serves as a portfolio demonstrating the application of advanced quantum chemistry software, statistical mechanics, and custom programming (C++, Python) to solve complex physical chemistry and kinetic problems.
 
 ## 🛠️ Technologies & Tools
-* **Programming Languages:** Python (Data Analysis, Matplotlib), C++ (Numerical evaluation of analytical wavefunctions), Bash/PowerShell.
+* **Programming Languages:** Python (Data Analysis, Matplotlib), C++ (Numerical evaluation of analytical wavefunctions)
 * **Quantum Chemistry Software:** Gaussian 16, Molpro, ORCA, xTB.
 * **Key Methods:** DFT (B3LYP, M06-2X, wB97X-D), Ab-initio (HF, MP2, CCSD(T)), Multi-reference (CASSCF, CASPT2), BOMD (Molecular Dynamics).
 
 ## 📂 Repository Structure
 
 * **`Report/`**: Contains the comprehensive final project report (`Giorgio_Venezia_10807335_Report_MolModProcEng.pdf`) detailing the theoretical background, methodologies, and results for all assignments.
-* **`practical0/ - practical8/`**: Individual directories containing:
+* **`practical0/ - practical9/`**: Individual directories containing:
   * Input files (`.com`, `.inp`, `.xyz`, `.gzmat`)
   * Extracted data and thermodynamic calculations (`.csv`, `.xlsx`)
   * Custom scripts (`.py`, `.cpp`, `.sh`)
